@@ -33,3 +33,8 @@ setInterval(changeImage, 2000);
 
 // Carga la primera imagen inmediatamente al cargar la página
 window.onload = changeImage;
+
+imgElement.addEventListener("click", function() {
+    changeImage();
+});
+
